@@ -1,9 +1,14 @@
-{ config, pkgs, inputs, ... }:
 {
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
   home-manager.users.s1ndl3s = {
     imports = [
       inputs.nvf.homeManagerModules.nvf
       ./terminal/terminalImports.nix
+      ./programs/fastfetch.nix
     ];
 
     home.username = "s1ndl3s";
