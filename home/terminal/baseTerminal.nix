@@ -56,7 +56,7 @@
       gs = "git status";
       gd = "git diff";
       dr = "sudo darwin-rebuild switch --flake ~/nix#MacBook-Air-von-Rene";
-      nn = "~/nix/configuration.nix";
+      nn = "nvim ~/nix/configuration.nix";
       n = "nvim";
     };
   };
