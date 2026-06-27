@@ -19,13 +19,22 @@
     };
   };
 
-  outputs = { self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, nvf, homebrew-cask, ... }:
-  let
+  outputs = {
+    self,
+    nix-darwin,
+    nixpkgs,
+    home-manager,
+    nix-homebrew,
+    homebrew-core,
+    nvf,
+    homebrew-cask,
+    ...
+  }: let
     system = "aarch64-darwin";
   in {
     darwinConfigurations."MacBook-Air-von-Rene" = nix-darwin.lib.darwinSystem {
       inherit system;
-      inputs = { inherit nvf; };
+      inputs = {inherit nvf;};
       modules = [
         nix-homebrew.darwinModules.nix-homebrew
         home-manager.darwinModules.home-manager
@@ -34,4 +43,3 @@
     };
   };
 }
-
