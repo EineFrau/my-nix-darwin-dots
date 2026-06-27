@@ -17,7 +17,7 @@
           set_color brmagenta
           echo -n (whoami)
           set_color normal
-          echo -n "  "
+          echo -n "  "
           set_color brblue
           echo -n "MacOS"
           set_color brred
@@ -56,6 +56,7 @@
       gs = "git status";
       gd = "git diff";
       dr = "sudo darwin-rebuild switch --flake ~/nix#MacBook-Air-von-Rene";
+      nn = "~/nix/configuration.nix";
       n = "nvim";
     };
   };
