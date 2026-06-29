@@ -23,8 +23,13 @@
     #    incremental_selection = { enable = true },
     #  }
     #'';
-    maps.normal = {
-      "<C-n>".action = "<cmd>Neotree toggle<CR>";
-    };
+    keymaps = [
+      {
+        mode = "n";
+        key = "<C-n>";
+        silent = true;
+        action = "<cmd>Neotree toggle<CR>";
+      }
+    ];
   };
 }

@@ -4,9 +4,19 @@
       enable = true;
     };
 
-    maps.normal = {
-      "<C-p>".action = "telescope.find_files";
-      "<C-l>".action = "telescope.live_grep";
-    };
+    keymaps = [
+      {
+        mode = "n";
+        key = "<C-p>";
+        silent = true;
+        action = "<cmd>lua require'telescope.builtin'.find_files()<CR>";
+      }
+      {
+        mode = "n";
+        key = "<C-l>";
+        silent = true;
+        action = "<cmd>lua require'telescope.builtin'.live_grep()<CR>";
+      }
+    ];
   };
 }

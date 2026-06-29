@@ -19,7 +19,7 @@
         treesitter.enable = true;
       };
 
-      ts = {
+      typescript = {
         enable = true;
         lsp.enable = true;
         extraDiagnostics.enable = false;

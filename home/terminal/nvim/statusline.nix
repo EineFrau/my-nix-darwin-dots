@@ -5,9 +5,19 @@
     tabline.nvimBufferline = {
       enable = true;
     };
-    maps.normal = {
-      "<Tab>".action = "<cmd>BufferLineCycleNext<CR>";
-      "<S-Tab>".action = "<cmd>BufferLineCyclePrev<CR>";
-    };
+    keymaps = [
+      {
+        key = "<Tab>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>BufferLineCycleNext<CR>";
+      }
+      {
+        key = "<S-Tab>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>BufferLineCyclePrev<CR>";
+      }
+    ];
   };
 }
