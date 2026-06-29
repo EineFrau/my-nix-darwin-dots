@@ -12,6 +12,7 @@
     ./nvim/telescope.nix
     ./nvim/treesitter.nix
     ./nvim/ui.nix
+    ./tmux/tmux.nix
     ./baseTerminal.nix
   ];
 }

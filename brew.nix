@@ -17,6 +17,9 @@
   homebrew = {
     enable = true;
     enableFishIntegration = true;
+    taps = [
+      "sikarugir-app/sikarugir"
+    ];
     casks = [
       "ghostty"
       "obs"
@@ -25,6 +28,18 @@
       "telegram"
       "yt-music"
       "sikarugir"
+      "minecraft"
+      "equibop"
+      "figma"
+      "temurin@11"
+      "zerotier-one"
+      "prismlauncher"
+      "roblox"
+      "visual-studio-code"
+      "spotify"
+      "nvidia-geforce-now"
+      "obsidian"
+      "db-browser-for-sqlite@nightly"
     ];
 
     brews = [
@@ -32,15 +47,17 @@
       "eza"
       "fish"
       "fastfetch"
+      "openjdk"
+      "libevent"
+      "utf8proc"
+      "ncurses"
     ];
 
-    /*
-      onActivation = {
+    onActivation = {
       autoUpdate = true;
       upgrade = true;
-      cleanup = "none";
+      cleanup = "uninstall";
     };
-    */
   };
 
   system.primaryUser = "s1ndl3s";
