@@ -18,9 +18,15 @@
     fish
   ];
 
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
+  nix = {
+    extraOptions = ''
+      experimental-features = nix-command flakes
+    '';
+    gc = {
+      automatic = true;
+      interval = {Day = 1;};
+    };
+  };
 
   programs.fish.enable = true;
 

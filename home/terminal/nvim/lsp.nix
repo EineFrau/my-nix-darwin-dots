@@ -27,10 +27,17 @@
         treesitter.enable = true;
       };
 
+      tsx = {
+        enable = true;
+        format.enable = true;
+        extraDiagnostics.enable = true;
+        lsp.enable = true;
+        treesitter.enable = true;
+      };
+
       rust = {
         enable = true;
         lsp.enable = true;
-        #extraDiagnostics.enable = true;
         format.enable = true;
         treesitter.enable = true;
       };
@@ -40,20 +47,28 @@
         lsp.enable = true;
         extraDiagnostics.enable = true;
         format.enable = true;
-        #treesitter.enable = true;
+        treesitter.enable = true;
       };
 
       clang = {
         enable = true;
         lsp.enable = true;
-        #extraDiagnostics.enable = true;
-        #format.enable = true;
+        extraDiagnostics.enable = true;
+        format.enable = true;
         treesitter.enable = true;
       };
       assembly = {
         enable = true;
         lsp.enable = true;
-        #treesitter.enable = true;
+        format.enable = true;
+        treesitter.enable = true;
+      };
+      python = {
+        enable = true;
+        lsp.enable = true;
+        format.enable = true;
+        extraDiagnostics.enable = true;
+        treesitter.enable = true;
       };
     };
   };

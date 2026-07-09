@@ -40,6 +40,15 @@
       "nvidia-geforce-now"
       "obsidian"
       "db-browser-for-sqlite@nightly"
+      "utm"
+      "robloxstudio"
+      "hot"
+      "krita"
+      "logmein-hamachi"
+      "vlc"
+      "blockbench"
+      "modrinth"
+      "prefs-editor"
     ];
 
     brews = [
@@ -51,6 +60,7 @@
       "libevent"
       "utf8proc"
       "ncurses"
+      "rust"
     ];
 
     onActivation = {

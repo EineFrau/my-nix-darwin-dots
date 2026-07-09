@@ -58,6 +58,7 @@
       dr = "sudo darwin-rebuild switch --flake ~/nix#MacBook-Air-von-Rene";
       nn = "cd ~/nix; nvim ~/nix/configuration.nix";
       n = "nvim";
+      c = "clear; fish";
     };
   };
 }
