@@ -49,6 +49,7 @@
       "blockbench"
       "modrinth"
       "prefs-editor"
+      "android-platform-tools"
     ];
 
     brews = [
@@ -61,6 +62,7 @@
       "utf8proc"
       "ncurses"
       "rust"
+      "pnpm"
     ];
 
     onActivation = {

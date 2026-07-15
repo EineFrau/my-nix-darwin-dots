@@ -22,6 +22,11 @@
       yarn
       python3
       pipx
+      aircrack-ng
+      bind
+      jwhois #| whois
+      thc-hydra
+      nmap
     ];
 
     programs.fish.enable = true;
