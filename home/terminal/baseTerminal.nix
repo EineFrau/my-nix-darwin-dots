@@ -59,6 +59,7 @@
       nn = "cd ~/nix; nvim ~/nix/configuration.nix";
       n = "nvim";
       c = "clear; fish";
+      "cd.." = "cd ..";
     };
   };
 }

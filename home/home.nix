@@ -27,6 +27,7 @@
       jwhois #| whois
       thc-hydra
       nmap
+      ext4fuse
     ];
 
     programs.fish.enable = true;

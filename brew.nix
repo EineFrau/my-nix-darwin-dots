@@ -18,38 +18,34 @@
     enable = true;
     enableFishIntegration = true;
     taps = [
-      "sikarugir-app/sikarugir"
+      #"sikarugir-app/sikarugir"
+      "pear-devs/pear"
     ];
     casks = [
+      "equibop"
+      "blender"
+      "pear-devs/pear/pear-desktop"
       "ghostty"
       "obs"
       "steam"
       "zen"
       "telegram"
-      "yt-music"
-      "sikarugir"
-      "minecraft"
-      "equibop"
-      "figma"
       "temurin@11"
-      "zerotier-one"
       "prismlauncher"
       "roblox"
-      "visual-studio-code"
       "spotify"
       "nvidia-geforce-now"
       "obsidian"
       "db-browser-for-sqlite@nightly"
       "utm"
-      "robloxstudio"
       "hot"
       "krita"
-      "logmein-hamachi"
       "vlc"
       "blockbench"
-      "modrinth"
       "prefs-editor"
       "android-platform-tools"
+      "docker-desktop"
+      "vscodium"
     ];
 
     brews = [
